@@ -1,5 +1,12 @@
 # LLMOps & AI Observability Platform
 
+## Overview
+
+A small lab for observing LLM calls along the path from prompt to model, retrieval and tools, and the signals that matter at each step: tokens, latency, cost, quality and errors. A Python HTTP service exposes a health endpoint and a `POST /check` gate, and a versioned ops API under `/v1` adds workspaces, tenant isolation, job approval and audit records. Tests run with pytest in GitHub Actions.
+
+- **Built with:** Python, pytest, GitHub Actions
+- **Scope:** Laptop lab; it calls no hosted model, and cluster apply stays false until a human approves.
+
 <!-- project-guide:start -->
 ## Project guide
 
